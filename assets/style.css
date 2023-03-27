@@ -1,0 +1,72 @@
+.template {
+    background-color: #222222;
+    height: 100vh;
+    width: auto;
+}
+
+.bg-gray {
+    background-color: gray !important;
+    border-radius: 0 !important;
+}
+
+
+.col-side {
+    border-right: 1px solid #aaaaaa;
+}
+
+.floating-panel {
+    background-color: white;
+    width: 42%;
+    height: 70vh;
+    position: absolute;
+    bottom: 8vh;
+    right: 20px;
+    font-size: 80%;
+}
+
+input[type=checkbox] {
+    margin-right: 10px;
+    pointer-events: auto;
+}
+
+.oy {
+    height: 80%;
+    overflow: auto;
+}
+
+.border-light {
+    border-bottom: 1px solid gray !important;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+
+.accordion-button {
+    pointer-events: none;
+}
+
+.accordion-button::after {
+    pointer-events: all;
+}
+
+
+.icon {
+    width: 6vh;
+    height: 6vh;
+}
+
+.icon1 {
+    background-color: #8785FF;
+    position: absolute;
+    bottom: 0vh;
+    right: 3vh;
+}
+
+.icon2 {
+    background-color: #F8B76B;
+    position: absolute;
+    bottom: 0vh;
+    right: 12vh;
+}

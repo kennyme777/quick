@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="template row">
+        <div class="col-2 col-side">
+        </div>
+        <div class="col-10 p-0">
+            <input type="password" class="form-control bg-gray border-0" />
+
+
+            <!-- Task -->
+            <div class='floating-panel rounded p-3' id="taskPanel">
+                <!-- Header -->
+                <div class="row">
+                    <div class='col-5 offset-md-2'>
+                        <div class="dropdown">
+                            <button class="btn btn-light btn-sm dropdown-toggle border-secondary" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                My Tasks
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="dropdownMenuButton2">
+                                <li><a class="dropdown-item" href="#">Personal Errands</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Urgent To-Do</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3 offset-md-2">
+                        <button class='btn btn-primary btn-sm' id="newTask">New Task</button>
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class='p-2 mt-2 oy'>
+                    <div class="accordion" id="accordionPanels">
+                        <div class="accordion-item border border-light">
+                            <!-- content header 1 -->
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    <input type="checkbox" id="checkbox1"></input>
+                                    <small class='fw-bolder text-secondary check1'>Close off Case #012920- RODRIGUES, Amigue</small>
+                                    &emsp;
+                                    <small class="text-danger nowrap">2 days left</small>
+                                    &emsp;
+                                    <small class="text-muted nowrap">12/06/2021</small>
+                                    &nbsp;
+                                </button>
+                            </h2>
+                            <!-- content body 1 -->
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-row bd-highlight">
+                                        <div class="p-2 bd-highlight">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.99187 0.666626C4.39187 0.666626 0.66687 4.39996 0.66687 8.99996C0.66687 13.6 4.39187 17.3333 8.99187 17.3333C13.6002 17.3333 17.3335 13.6 17.3335 8.99996C17.3335 4.39996 13.6002 0.666626 8.99187 0.666626ZM9.00037 15.6666C5.31703 15.6666 2.3337 12.6833 2.3337 8.99996C2.3337 5.31662 5.31703 2.33329 9.00037 2.33329C12.6837 2.33329 15.667 5.31662 15.667 8.99996C15.667 12.6833 12.6837 15.6666 9.00037 15.6666ZM8.16687 4.83329H9.41687V9.20829L13.1669 11.4333L12.5419 12.4583L8.16687 9.83329V4.83329Z"
+                                                    fill="#2F80ED" />
+                                            </svg>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <input type="date" class="form-control form-control-sm" value="2021-06-12">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row bd-highlight mb-3">
+                                        <div class="p-2 bd-highlight">
+                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2165 0C12.0082 0 11.7915 0.0833333 11.6332 0.241667L10.1082 1.76667L13.2332 4.89167L14.7582 3.36667C15.0832 3.04167 15.0832 2.51667 14.7582 2.19167L12.8082 0.241667C12.6415 0.075 12.4332 0 12.2165 0ZM9.21667 5.01667L9.98333 5.78333L2.43333 13.3333H1.66667V12.5667L9.21667 5.01667ZM0 11.875L9.21667 2.65833L12.3417 5.78333L3.125 15H0V11.875Z" fill="#2F80ED" />
+                                            </svg>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            Closing off this case since this application has been cancelled. No one really understand how this case could possibly be cancelled. The options and the documents within this document were totally a guaranteed for a success!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border border-light">
+                            <!-- content header 2 -->
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo">
+                                    <input type="checkbox" id="checkbox2"></input>
+                                    <small class='fw-bolder text-secondary check2'>Check and Revise Homework from Andre Gonzales</small>
+                                    &emsp;
+                                    <small class="text-danger nowrap">3 days left</small>
+                                    &emsp;
+                                    <small class="text-muted nowrap">11/06/2021</small>
+                                    &nbsp;
+                                </button>
+                            </h2>
+                            <!-- content body 2 -->
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-row bd-highlight">
+                                        <div class="p-2 bd-highlight">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.99187 0.666626C4.39187 0.666626 0.66687 4.39996 0.66687 8.99996C0.66687 13.6 4.39187 17.3333 8.99187 17.3333C13.6002 17.3333 17.3335 13.6 17.3335 8.99996C17.3335 4.39996 13.6002 0.666626 8.99187 0.666626ZM9.00037 15.6666C5.31703 15.6666 2.3337 12.6833 2.3337 8.99996C2.3337 5.31662 5.31703 2.33329 9.00037 2.33329C12.6837 2.33329 15.667 5.31662 15.667 8.99996C15.667 12.6833 12.6837 15.6666 9.00037 15.6666ZM8.16687 4.83329H9.41687V9.20829L13.1669 11.4333L12.5419 12.4583L8.16687 9.83329V4.83329Z"
+                                                    fill="#2F80ED" />
+                                            </svg>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <input type="date" class="form-control form-control-sm" value="2021-06-11">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row bd-highlight mb-3">
+                                        <div class="p-2 bd-highlight">
+                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2165 0C12.0082 0 11.7915 0.0833333 11.6332 0.241667L10.1082 1.76667L13.2332 4.89167L14.7582 3.36667C15.0832 3.04167 15.0832 2.51667 14.7582 2.19167L12.8082 0.241667C12.6415 0.075 12.4332 0 12.2165 0ZM9.21667 5.01667L9.98333 5.78333L2.43333 13.3333H1.66667V12.5667L9.21667 5.01667ZM0 11.875L9.21667 2.65833L12.3417 5.78333L3.125 15H0V11.875Z" fill="#2F80ED" />
+                                            </svg>
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            Homeworks needed to be checked are as follows : Client Profile Questionnaire, Passport Requirements and Images, Personal Documents.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <!-- Inbox -->
+            <div class='floating-panel rounded p-3' id="inboxPanel" style="display:none">
+                <!-- Header -->
+                <div class="row">
+                    <div class='col-5 offset-md-1 fw-bolder'>
+                        Inbox
+                    </div>
+                </div>
+
+                <!-- Content -->
+                <div class='p-2 mt-2 oy'>
+                    chat
+                </div>
+
+            </div>
+
+            <!-- Footer Menu -->
+            <div class="icon icon1 rounded-circle justify-content-center">
+                <div class="p-2">
+                    <svg width="20" height="20" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M18.0371 0.926147H1.66673C0.974137 0.926147 0.407471 1.49281 0.407471 2.18541V19.815L5.44451 14.778H18.0371C18.7297 14.778 19.2964 14.2113 19.2964 13.5187V2.18541C19.2964 1.49281 18.7297 0.926147 18.0371 0.926147ZM16.7779 3.44458V12.2594H4.39933L3.65637 13.0024L2.926 13.7327V3.44458H16.7779ZM21.8149 5.96321H24.3334C25.026 5.96321 25.5927 6.52987 25.5927 7.22247V26.1114L20.5556 21.0743H6.70376C6.01117 21.0743 5.4445 20.5077 5.4445 19.8151V17.2965H21.8149V5.96321Z"
+                            fill="white" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="icon icon2 rounded-circle">
+                <div class="pt-2 ps-2">
+                    <svg width="20" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M3.11114 0.66626H23.1111C24.3334 0.66626 25.3334 1.66626 25.3334 2.88848V17.3329C25.3334 18.5551 24.3334 19.5551 23.1111 19.5551H3.11114C1.88892 19.5551 0.888916 18.5551 0.888916 17.3329V2.88848C0.888916 1.66626 1.88892 0.66626 3.11114 0.66626ZM3.11114 2.88848V17.3329H12V2.88848H3.11114ZM23.1111 17.3329H14.2222V2.88848H23.1111V17.3329ZM22 6.77737H15.3334V8.44404H22V6.77737ZM15.3334 9.55515H22V11.2218H15.3334V9.55515ZM22 12.3329H15.3334V13.9996H22V12.3329Z"
+                            fill="white" />
+                    </svg>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function (e) {
+
+            // switch menu
+            $('.icon1').click(function () {
+                $('#taskPanel').show();
+                $('#inboxPanel').hide();
+            });
+
+            $('.icon2').click(function () {
+                $('#taskPanel').hide();
+                $('#inboxPanel').show();
+            });
+
+            // checkbox
+            $('[id*="checkbox"]').change(function () {
+                if (this.checked) {
+                    $(this).parent().children(':nth-child(2)').css("text-decoration", "line-through")
+                }
+                else {
+                    $(this).parent().children(':nth-child(2)').css("text-decoration", "none")
+                }
+            });
+
+            // new task
+            let co = 3;
+            $('#newTask').click(function () {
+                $('#accordionPanels').append(
+                    `<div class="accordion-item border border-white">
+                            <!-- content header 3 -->
+                            <h2 class="accordion-header" id="panelsStayOpen-heading${co}">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapse${co}" aria-expanded="true" aria-controls="panelsStayOpen-collapse${co}">
+                                    <input type="checkbox" id="checkbox2"></input>
+                                    <input type="email" class="form-control form-control-sm" id="exampleFormControlInput${co}" placeholder="Type Task title">
+                                    &emsp;
+                                </button>
+                            </h2>
+                            <!-- content body 3 -->
+                            <div id="panelsStayOpen-collapse${co}" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-heading${co}">
+                                <div class="accordion-body">
+                                    <div class="d-flex flex-row bd-highlight">
+                                        <div class="p-2 bd-highlight">
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M8.99199 0.666626C4.39199 0.666626 0.666992 4.39996 0.666992 8.99996C0.666992 13.6 4.39199 17.3333 8.99199 17.3333C13.6003 17.3333 17.3337 13.6 17.3337 8.99996C17.3337 4.39996 13.6003 0.666626 8.99199 0.666626ZM9.00049 15.6666C5.31715 15.6666 2.33382 12.6833 2.33382 8.99996C2.33382 5.31662 5.31715 2.33329 9.00049 2.33329C12.6838 2.33329 15.6672 5.31662 15.6672 8.99996C15.6672 12.6833 12.6838 15.6666 9.00049 15.6666ZM8.16699 4.83329H9.41699V9.20829L13.167 11.4333L12.542 12.4583L8.16699 9.83329V4.83329Z"
+                                                    fill="#4F4F4F" />
+                                            </svg>
+
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            <input type="date" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row bd-highlight mb-3">
+                                        <div class="p-2 bd-highlight">
+                                            <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.2165 0C12.0082 0 11.7915 0.0833333 11.6332 0.241667L10.1082 1.76667L13.2332 4.89167L14.7582 3.36667C15.0832 3.04167 15.0832 2.51667 14.7582 2.19167L12.8082 0.241667C12.6415 0.075 12.4332 0 12.2165 0ZM9.21667 5.01667L9.98333 5.78333L2.43333 13.3333H1.66667V12.5667L9.21667 5.01667ZM0 11.875L9.21667 2.65833L12.3417 5.78333L3.125 15H0V11.875Z" fill="#4F4F4F" />
+                                            </svg>
+
+                                        </div>
+                                        <div class="p-2 bd-highlight">
+                                            No Description
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>`
+                )
+                co++;
+            });
+        });
+    </script>
+</body>
+
+</html>
